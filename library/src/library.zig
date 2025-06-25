@@ -124,7 +124,7 @@ test {
     try library.books.insert(book2.ISBN, book2);
     try library.loan(1, 123);
     try library.loan(2, 123);
-    try library.loan(3, 123);
+    try library.loan(3, 123); //harmless comment
     try library.loan(1, 126);
     if (library.members.get(member1.id)) |member| {
         member.printLoaned();
